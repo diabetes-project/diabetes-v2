@@ -1,0 +1,72 @@
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Modal styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.modal.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal-content {
+    transform: translateY(-20px);
+    transition: transform 0.3s ease;
+}
+
+.modal.active .modal-content {
+    transform: translateY(0);
+}
+
+/* Input focus styles */
+input:focus {
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.form-group {
+    animation: fadeIn 0.3s ease forwards;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .form-container {
+        grid-template-columns: 1fr;
+    }
+}
