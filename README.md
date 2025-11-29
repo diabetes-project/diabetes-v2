@@ -72,6 +72,9 @@ pip install -r requirements.txt
 python app.py
 ```
 Ứng dụng chạy tại: http://127.0.0.1:5000/
+
+---
+
 ## 📁 Cấu trúc thư mục
 ```csharp
 ├── components/
@@ -88,6 +91,9 @@ python app.py
 ├── README.md
 └── requirements.txt
 ```
+
+---
+
 ## 🧑‍⚕️ Ý nghĩa thực tiễn
 
 Kết quả mô hình có thể hỗ trợ:
@@ -97,22 +103,30 @@ Kết quả mô hình có thể hỗ trợ:
 ✔ Xây dựng chính sách điều trị và phân tuyến  
 ✔ Hỗ trợ nghiên cứu kinh tế y tế  
 ✔ Dự báo xu hướng chi phí theo mức độ bệnh & biến chứng
+
+---
+
 ## ⚠️ Lưu ý quan trọng
 - Mục đích của mô hình sử dụng cho nghiên cứu khoa học, phân tích, quản lý y tế.
 - Kết quả dự báo phụ thuộc vào chất lượng dữ liệu đầu vào.
+
+---
+
 ## 📚 Trích dẫn (nếu dùng mô hình)
 Nếu bạn sử dụng công cụ hoặc mã nguồn trong nghiên cứu, vui lòng trích dẫn:
 ```bash
 <Nguyễn Linh Việt> (2025). DiabCost Predictor: Machine Learning Model for Predicting Diabetes Treatment Cost.
 https://github.com/diabetes-project/diabetes-v2
 ```
+
+---
+
 ## 🤝 Đóng góp
 Mọi đóng góp nhằm cải thiện mô hình, giao diện hoặc mở rộng tính năng luôn được chào đón!
 
+---
+
 ## 📩 Liên hệ
-
-Tác giả: <Nguyễn Linh Việt>
-
+Tác giả: **Nguyễn Linh Việt**
 Email: <Email>
-
 GitHub: https://github.com/diabetes-project/diabetes-v2
