@@ -12,12 +12,11 @@
 
 **DiabCost Predictor** là ứng dụng web triển khai mô hình machine learning nhằm dự báo **chi phí điều trị một đợt khám/điều trị của người bệnh đái tháo đường**, dựa trên các thông tin hành chính – lâm sàng thường có trong hồ sơ BHYT.
 
-Hệ thống này được phát triển như một phần của **luận án/đề tài nghiên cứu** trong lĩnh vực **quản lý y tế / y tế công cộng / khoa học dữ liệu y tế**.
+Hệ thống này được phát triển như một phần của **luận án nghiên cứu** trong lĩnh vực **Quản lý Dược**.
 
 Ứng dụng hỗ trợ:
 
-- Ước tính chi phí điều trị theo từng cá nhân  
-- Phân tích ảnh hưởng của các yếu tố như biến chứng, bệnh kèm, tuyến điều trị…  
+- Ước tính chi phí điều trị theo từng cá nhân   
 - Hỗ trợ hoạch định chính sách chi trả BHYT  
 - Tối ưu phân bổ nguồn lực trong điều trị đái tháo đường
 
@@ -28,27 +27,19 @@ Hệ thống này được phát triển như một phần của **luận án/đ
 Mô hình chính sử dụng:
 
 ### ✔ **XGBoost Regressor**
-- Objective: `reg:gamma` (phân phối lệch phải, phù hợp dữ liệu chi phí y tế)  
-- Hyperparameters được tinh chỉnh bằng `RandomizedSearchCV`  
-- Sử dụng **Pipeline sklearn** gồm:
-  - `ColumnTransformer`  
-  - `StandardScaler` cho biến số  
-  - `OneHotEncoder` cho biến phân loại  
-  - XGBoost để dự báo đầu ra  
-
-Mô hình được huấn luyện trên dataset BHYT sau tiền xử lý với **hơn 14 triệu lượt điều trị**.
+Mô hình được huấn luyện trên dữ liệu thanh toán BHXH tại 2 khu vực TP. Hà Nội và TP.HCM (trước sáp nhập) với **hơn 14 triệu lượt điều trị**.
 
 ---
 
 ## 🌐 Công nghệ
 
 ### Backend
-- Python 3
+- Python
 - Flask
 - Scikit-learn
 - XGBoost
 - Pandas, NumPy
-- Joblib (lưu mô hình)
+- Joblib
 
 ### Frontend
 - TailwindCSS
@@ -59,7 +50,7 @@ Mô hình được huấn luyện trên dataset BHYT sau tiền xử lý với *
 
 ## 🖥️ Demo giao diện
 
-UI được thiết kế theo phong cách **glassmorphism**, đơn giản – trực quan – dễ dùng cho nhân viên y tế:
+UI được thiết kế theo phong cách **glassmorphism**, đơn giản – trực quan – dễ dùng cho người bệnh/nhân viên y tế:
 
 - Form nhập liệu 16 trường thông tin hành chính/lâm sàng  
 - Tự động xử lý và chuẩn hóa dữ liệu đầu vào  
@@ -86,16 +77,17 @@ python app.py
 Ứng dụng chạy tại: http://127.0.0.1:5000/
 ### 📁 Cấu trúc thư mục
 ```csharp
-├── app.py                 # Flask backend
-├── trained_pipeline_xgb.pkl   # Pipeline ML đã huấn luyện
-├── templates/
-│   └── index.html         # Giao diện chính
-├── static/
-│   ├── logo.png
-│   └── style.css
 ├── components/
 │   ├── header.js
 │   └── footer.js
+├── static/
+│   ├── logo.png
+│   └── style.css
+├── templates/
+│   └── index.html              # Giao diện chính
+├── app.py                      # Flask backend
+├── diabetes_final_251125.ipynb # Jupyter Notebook
+├── trained_pipeline_xgb.pkl    # Pipeline ML đã huấn luyện
 ├── README.md
 └── requirements.txt
 ```
@@ -103,20 +95,19 @@ python app.py
 
 Kết quả mô hình có thể hỗ trợ:
 
-✔ Ước tính trước chi phí cho từng bệnh nhân
-✔ Hoạch định ngân sách chi trả BHYT
-✔ Xây dựng chính sách điều trị và phân tuyến
-✔ Hỗ trợ nghiên cứu kinh tế y tế
-✔ Dự báo xu hướng chi phí theo mức độ bệnh & biến chứng
+✔ Ước tính trước chi phí cho từng bệnh nhân\n
+✔ Hoạch định ngân sách chi trả BHYT\n
+✔ Xây dựng chính sách điều trị và phân tuyến\n
+✔ Hỗ trợ nghiên cứu kinh tế y tế\n
+✔ Dự báo xu hướng chi phí theo mức độ bệnh & biến chứng\n
 ## ⚠️ Lưu ý quan trọng
-Đây không phải công cụ chẩn đoán lâm sàng.
-Mục đích sử dụng cho nghiên cứu khoa học, phân tích, quản lý y tế.
-Kết quả dự báo phụ thuộc vào chất lượng dữ liệu đầu vào.
+- Mục đích của mô hình sử dụng cho nghiên cứu khoa học, phân tích, quản lý y tế.
+- Kết quả dự báo phụ thuộc vào chất lượng dữ liệu đầu vào.
 ## 📚 Trích dẫn (nếu dùng mô hình)
 Nếu bạn sử dụng công cụ hoặc mã nguồn trong nghiên cứu, vui lòng trích dẫn:
 ```bash
-<Your Name> (2025). DiabCost Predictor: Machine Learning Model for Predicting Diabetes Treatment Cost.
-https://github.com/<username>/diabcost-predictor
+<Nguyễn Linh Việt> (2025). DiabCost Predictor: Machine Learning Model for Predicting Diabetes Treatment Cost.
+https://github.com/diabetes-project/diabetes-v2
 ```
 ## 🤝 Đóng góp
 Mọi đóng góp nhằm cải thiện mô hình, giao diện hoặc mở rộng tính năng luôn được chào đón!
@@ -127,4 +118,4 @@ Tác giả: <Nguyễn Linh Việt>
 
 Email: <Email>
 
-GitHub: https://github.com/diabetes-project/diabetes
+GitHub: https://github.com/diabetes-project/diabetes-v2
