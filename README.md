@@ -57,6 +57,17 @@ UI được thiết kế theo phong cách **glassmorphism**, đơn giản – tr
 
 ---
 
+## 🌐 Ứng dụng trực tuyến
+
+Bạn có thể trải nghiệm **DiabCost Predictor** ngay trên web mà không cần cài đặt:
+
+[🔗 Truy cập ứng dụng online](https://diabcost.herokuapp.com)  
+
+- Điền thông tin hành chính và lâm sàng  
+- Nhấn "Dự báo chi phí" để nhận kết quả ngay lập tức  
+
+---
+
 ## 🚀 Hướng dẫn cài đặt
 
 ### 1️⃣ Clone dự án
@@ -129,6 +140,6 @@ Mọi đóng góp nhằm cải thiện mô hình, giao diện hoặc mở rộng
 ---
 
 ## 📩 Liên hệ
-Tác giả: **Nguyễn Linh Việt**
-Email: <Email>
+Tác giả: **Nguyễn Linh Việt**  
+Email: <Email>  
 GitHub: https://github.com/diabetes-project/diabetes-v2
