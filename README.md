@@ -47,9 +47,9 @@ Mô hình được huấn luyện trên dữ liệu thanh toán BHXH tại 2 khu
 
 ## 🖥️ Demo giao diện
 
-UI được thiết kế theo phong cách **glassmorphism**, đơn giản – trực quan – dễ dùng cho người bệnh/nhân viên y tế:
+UI được thiết kế đơn giản – trực quan – dễ dùng cho người bệnh/nhân viên y tế:
 
-- Form nhập liệu 16 trường thông tin hành chính/lâm sàng  
+- Form nhập liệu 17 trường thông tin hành chính/lâm sàng  
 - Tự động xử lý và chuẩn hóa dữ liệu đầu vào  
 - Kết quả được hiển thị ngay trong cùng trang  
 
@@ -61,7 +61,7 @@ UI được thiết kế theo phong cách **glassmorphism**, đơn giản – tr
 
 Bạn có thể trải nghiệm **DiabCost Predictor** ngay trên web mà không cần cài đặt:
 
-[🔗 Truy cập ứng dụng online](https://diabcost.herokuapp.com)  
+[🔗 Truy cập ứng dụng online](https://diabetes-v2.onrender.com/)  
 
 - Điền thông tin hành chính và lâm sàng  
 - Nhấn "Dự báo chi phí" để nhận kết quả ngay lập tức  
