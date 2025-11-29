@@ -72,7 +72,7 @@ pip install -r requirements.txt
 python app.py
 ```
 Ứng dụng chạy tại: http://127.0.0.1:5000/
-### 📁 Cấu trúc thư mục
+## 📁 Cấu trúc thư mục
 ```csharp
 ├── components/
 │   ├── header.js
@@ -92,11 +92,11 @@ python app.py
 
 Kết quả mô hình có thể hỗ trợ:
 
-✔ Ước tính trước chi phí cho từng bệnh nhân\n
-✔ Hoạch định ngân sách chi trả BHYT\n
-✔ Xây dựng chính sách điều trị và phân tuyến\n
-✔ Hỗ trợ nghiên cứu kinh tế y tế\n
-✔ Dự báo xu hướng chi phí theo mức độ bệnh & biến chứng\n
+✔ Ước tính trước chi phí cho từng bệnh nhân  
+✔ Hoạch định ngân sách chi trả BHYT  
+✔ Xây dựng chính sách điều trị và phân tuyến  
+✔ Hỗ trợ nghiên cứu kinh tế y tế  
+✔ Dự báo xu hướng chi phí theo mức độ bệnh & biến chứng
 ## ⚠️ Lưu ý quan trọng
 - Mục đích của mô hình sử dụng cho nghiên cứu khoa học, phân tích, quản lý y tế.
 - Kết quả dự báo phụ thuộc vào chất lượng dữ liệu đầu vào.
